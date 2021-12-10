@@ -3,10 +3,16 @@ font-family: 'Allerta', sans-serif;
 font-family: 'Montserrat', sans-serif; 
 */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Allerta', sans-serif;
-  margin: 0; 
+  margin: 0;
 }
 
+main {
+  flex: 1;
+}
 .button {
 
   border: none;
@@ -62,12 +68,12 @@ input[type='checkbox']:checked:after {
 
 /* Una buena practica tener estilos centralizados */
 .contenedor {
-  width: 800px;
+  position: relative;
+  max-width: 800px;
   margin: auto;
-  position:relative;
 }
 
-.background-general{
+.background-general {
   background: #3a2b29;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
   height: 85px;
@@ -92,8 +98,9 @@ input[type='checkbox']:checked:after {
 }
 
 .cafes {
+  margin-top: 60px;
+  margin-bottom: -60px;
   color: #412B19;
-  margin-bottom: 60px;
 }
 
 /* SELECTOR DESCENDENTE */
@@ -173,9 +180,8 @@ input[type='checkbox']:checked:after {
 .left {
   float: left;
   position: relative;
-
+  top: -120px;
 }
-
 
 .contenedor-cafe-a {
   position: relative;
@@ -225,7 +231,7 @@ input[type='checkbox']:checked:after {
 
   /* padding: 50px 10px;  */
 }
-
+/* Esto es un comentario*/
 /* vamos darle estilos a las clases col1 y col2 */
 
 .col1, .col2 {
@@ -259,22 +265,17 @@ input[type='checkbox']:checked:after {
 }
 
 /* Tablas */
+
 table {
-width: 100%; 
-margin-bottom: 60px;
-/* Toma el 100% de su padre contenedor que tiene los800px */
+  width: 100%; /* toma el 100% de tu padre contenedor que tiene los 800px */
+  margin-bottom: 60px;
 }
 
 th {
-  background: #3a2b29;
+  background-color: #3a2b29;
   color: white;
   padding: 10px 20px;
 }
-
-.tabla  {
-  margin: 50px 0;
-}
-
 
 td {
   padding: 20px;
@@ -283,39 +284,34 @@ td {
 table, td, th {
   font-size: 20px;
   border: 0;
-
-/* border: 1px solid #C29B61;
-border-collapse: collapse ; */
-
+  /* border: 1px solid #C29B61;
+  border-collapse: collapse; */
 }
-i{
+i {
   font-size: 12px;
 }
-
 .precio {
-  background: #9c540c;
-  border-radius: 50%;
-  color: white;
   font-size: 12px;
   padding: 15px 7px;
-  text-align: center;
   width: 35px;
-
+  color: white;
+  text-align: center;
+  background: #9c540c ;
+  border-radius: 50%;
 }
 .titulo-precio {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   color: #3a2b29;
   font-size: 45px;
-  font-family: 'pacifico', cursive;
+  font-family: 'Pacifico', cursive;
   margin-top: 20px;
   margin-bottom: 40px;
-
-
 }
 
-
-
+.tabla {
+  margin: 50px 0;
+}
 
 /* Tablas */
