@@ -24,6 +24,37 @@
         text-align: center;
         margin: 0;
     }
+    .right {
+        float: none;
+        position:static;
+
+    }
+    .left {
+        float: none;
+        position:static;
+
+    }
+    .contenedor-cafe-a {
+        position:static;
+        padding: 0;
+
+    }
+    .contenedor-cafe-b{
+        margin: 0;
+        position: static;
+    }
+
+    .cafe.granoscafe {
+        height: auto;
+    }
+
+    .cafe li {
+        list-style: none;
+    }
+    .title-b {
+        margin: 0;
+    }
+    
 
 
     /* Fin de Cafes */
