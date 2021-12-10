@@ -1,4 +1,7 @@
 /* 768 para tablet y esta dentro de los 800px que vamos a trabajar */
+
+/* INICIO TABLES */
+
 @media screen and (max-width: 800px) {
     /* Portada */
     .titulo{
@@ -59,9 +62,65 @@
 
     /* Fin de Cafes */
 
+    /* FIN TABLES */
 
-
+    
 }
 
+/* Cualquier dispositivo que sea inferior a 767 vamos a cambiar el footer */
 
-
+@media screen and (max-width: 767px) {
+    textarea {
+        width: 100%;
+    }
+    
+    .footer .contenedor {
+        display: block;
+    }
+    .footer img {
+        width: 250px;
+    }
+    .contacto {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    
+    }
+    .formulario {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .formulario .button{
+        width: 100%;
+        box-shadow: 0 0 10px 0 rgba(0,0,0, 0.24);
+    }
+    .generos label {
+        font-size: 16px;
+    
+    }
+    .intereses label {
+        display: block;
+        font-size: 16px;
+    
+    }
+    .col1 {
+        margin: 0;
+        }
+    
+    
+    /* Selectores de atributo */
+    
+    input[type="text"],
+    input[type="email"] {
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        position: relative;
+        top: 3px;
+        zoom: 1.5;
+    }
+}
